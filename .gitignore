@@ -4,3 +4,8 @@
 
 # Ignore dependency directories
 /node_modules/
+/storage/
+/upload/
+
+# Ignore cache file
+userinfo.db
