@@ -1,0 +1,26 @@
+{
+	"name": "deduplication",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "An example of file deduplication",
+	"main": "./server/server.js",
+	"scripts": {
+		"start": "nodemon ./server/server.js"
+	},
+	"keywords": [
+		"express",
+		"deduplication"
+	],
+	"author": "Rehug",
+	"license": "MIT",
+	"devDependencies": {
+		"nodemon": "^3.1.3"
+	},
+	"dependencies": {
+		"express": "^4.19.2",
+		"express-session": "^1.18.0",
+		"multer": "^1.4.5-lts.1",
+		"node-json-db": "^2.3.0",
+		"pug": "^3.0.3"
+	}
+}

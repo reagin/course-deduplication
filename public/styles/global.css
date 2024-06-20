@@ -1,0 +1,7 @@
+body.swal2-shown.swal2-height-auto {
+	height: 100vh !important;
+}
+
+body.swal2-shown > div.swal2-container {
+	user-select: none;
+}

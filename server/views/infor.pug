@@ -1,0 +1,23 @@
+extends ./layout/layout.pug
+
+append styles
+  link(rel="stylesheet", href="/public/styles/infor.css")
+
+append scripts 
+  script(src="/public/scripts/infor.js") 
+
+append content 
+  h2= `User File Lists - ${username}`
+  .options 
+    .upload-option
+      input#input-file(type="file")
+      button#upload-file(type="submit")= `Upload`
+    .action-optin
+      button#logout(type="submit")= `Log out`
+      button#unregister(type="submit")= `Unregister`
+  .filelist
+    each item, key in filelist
+      .fileitem 
+        span.filename= `${key}`
+        span.filecontent= `[${item.map(arrItem => arrItem.substring(0, 6)).join("...,")}...]`
+        button.deletefile(type="button")= `Delete`

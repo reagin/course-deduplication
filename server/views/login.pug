@@ -1,0 +1,17 @@
+extends ./layout/layout.pug
+
+append styles
+  link(rel="stylesheet", href="/public/styles/login.css")
+
+append scripts 
+  script(src="/public/scripts/login.js") 
+
+append content 
+  .content 
+    h2= `Log In`
+    form(action='/login' method='post' id='form-login')
+      .input-box 
+        label= `Username: `
+        input#username(type="text", name="username" required)
+      button.btn-submit(type="submit") Submit 
+    span= `This project is for test use only and should not be used in a production environment`
